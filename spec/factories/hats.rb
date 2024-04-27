@@ -1,5 +1,6 @@
 FactoryBot.define do
   factory :hat do
-    name { "MyString" }
+    sequence(:name) {|n| "Name #{n}" }
   end
 end
+
